@@ -1,3 +1,66 @@
 #hero-nav{
+  width: 100%;
+  height: 100vh;
+  position: relative;
 
+  &.bg-texture{
+    background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+    linear-gradient(-45deg, #512DA8 100%, transparent 33%);
+background:-moz-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+    linear-gradient(-45deg, #512DA8 100%, transparent 33%);
+background:linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+    linear-gradient(-45deg, #512DA8 100%, transparent 33%);
+  }
+
+  nav{
+    padding: 15px 30px;
+    .navbar-brand{
+      font-size: 22px;
+      font-weight: 600;
+      color: #FFFFFF;
+      font-family: "Catamaran",sans-serif;
+      padding-left: 15px!important;
+    }
+    li{
+      a{
+        color: #FFFFFF;
+        font-size: 15px;
+        font-family: "Lato",sans-serif;
+        font-weight: 300;
+        padding: 0 12px;
+
+        &:hover{
+          color: #000000;
+        }
+        @media(max-width: 1024px){text-align: center;}
+      }
+
+    }
+    .dropdown-menu{
+      .dropdown-item{
+        color: #000000!important;
+        text-align: left;
+        &:hover{
+          background-color: #FFB300;
+        }
+      }
+    }
+  }
+
+  .col-md-5{
+    padding-top: 8em;
+    h1{
+      font-size: 35px;
+      color: #FFFFFF;
+      font-family: "Lato",sans-serif;
+      span{
+        color: rgb(255, 191, 0);
+      }
+    }
+    p{
+      color: #FFFFFF;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+  }
 }
