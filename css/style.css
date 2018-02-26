@@ -1,9 +1,10 @@
 #hero-nav {
-  height: 100vh;
+  height: auto;
   position: relative;
   z-index: 0;
-  background: url("../img/background.jpg") no-repeat;
-  background-size: cover; }
+  background: url("../img/bg.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
   #hero-nav::after {
     content: "";
     z-index: -1;
@@ -12,7 +13,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(0, 255, 179, 0.65); }
+    background-color: rgba(0, 0, 0, 0.58); }
   #hero-nav nav {
     padding: 30px 0; }
     #hero-nav nav .navbar-brand {
@@ -25,12 +26,12 @@
       display: inline-block; }
       #hero-nav nav li a {
         color: #FFFFFF;
-        font-size: 20px;
+        font-size: 18px;
         font-family: "Lato",sans-serif;
         font-weight: 400;
         padding: 0 13px; }
         #hero-nav nav li a:hover {
-          color: #000000; }
+          color: #ffbf00; }
         @media (max-width: 1024px) {
           #hero-nav nav li a {
             text-align: center; } }
@@ -48,21 +49,26 @@
           background-color: #FFB300;
           width: 100%;
           overflow: hidden; }
-  #hero-nav .col-sm-6 {
+  #hero-nav .hero-desc {
     margin-top: 10em;
-    margin-left: 15px; }
-    #hero-nav .col-sm-6 h1 {
+    margin-left: 20px; }
+    #hero-nav .hero-desc h1 {
       font-size: 40px;
       color: #FFFFFF;
       font-family: "Lato",sans-serif;
       margin-bottom: 0.30em;
       font-weight: 300; }
-      #hero-nav .col-sm-6 h1 span {
+      #hero-nav .hero-desc h1 span {
         color: #ffbf00; }
-    #hero-nav .col-sm-6 p {
+    #hero-nav .hero-desc p {
       color: #FFFFFF;
       font-size: 20px;
       line-height: 1.5; }
+    #hero-nav .hero-desc img {
+      width: 172px; }
+  #hero-nav .hero-img .phone {
+    width: 250px;
+    height: 90%; }
 
 body {
   font-family: "Lato",sans-serif;
