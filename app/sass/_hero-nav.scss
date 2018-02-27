@@ -1,0 +1,103 @@
+#hero-nav{
+  height: auto;
+  position: relative;
+  z-index: 0;
+  background: url("../img/bg.jpg")no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  &::after{
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.58);
+  }
+//   &.bg-texture{
+//     background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+//     linear-gradient(-45deg, #512DA8 100%, transparent 33%);
+// background:-moz-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+//     linear-gradient(-45deg, #512DA8 100%, transparent 33%);
+// background:linear-gradient(-45deg, #ffb300 33%, transparent 0%),
+//     linear-gradient(-45deg, #512DA8 100%, transparent 33%);
+//   }
+
+  nav{
+    padding: 30px 0;
+    .navbar-brand{
+      font-size: 30px;
+      font-weight: 600;
+      color: #FFFFFF;
+      font-family: "Catamaran",sans-serif;
+      padding-left: 15px!important;
+    }
+    li{
+      display: inline-block;
+      a{
+        color: #FFFFFF;
+        font-size: 18px;
+        font-family: "Lato",sans-serif;
+        font-weight: 400;
+        padding: 0 13px;
+
+        &:hover{
+          color: rgb(255, 191, 0);
+        }
+        @media(max-width: 1024px){text-align: center;}
+      }
+
+    }
+    .dropdown{
+      .dropdown-toggle::after{vertical-align: middle;}
+      .dropdown-menu{
+        margin: 15px 0 0;
+        .dropdown-divider{
+          border: 1px solid #000000;
+        }
+        .dropdown-item{
+          color: #000000!important;
+          text-align: left;
+          padding: 10px 15px 25px 10px;
+          &:hover{
+            background-color: #FFB300;
+            width: 100%;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+
+  }
+
+  .hero-desc{
+    margin-top: 10em;
+    margin-left: 20px;
+    h1{
+      font-size: 40px;
+      color: #FFFFFF;
+      font-family: "Lato",sans-serif;
+      margin-bottom: 0.30em;
+      font-weight: 300;
+      span{
+        color: rgb(255, 191, 0);
+      }
+    }
+    p{
+      color: #FFFFFF;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+    img{
+      width: 172px;
+    }
+  }
+
+  .hero-img{
+    .phone{
+      width: 250px;
+      height: 90%;
+    }
+  }
+}

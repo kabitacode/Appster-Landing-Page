@@ -1,0 +1,22 @@
+{
+  "name": "appster",
+  "version": "1.0.0",
+  "description": "App Landing Page ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciplex/Appster-Landing-Page.git"
+  },
+  "author": "Muhamad Zulfiqor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ciplex/Appster-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/ciplex/Appster-Landing-Page#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
