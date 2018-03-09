@@ -12,9 +12,16 @@ module.exports = function(grunt){
      },
      cssmint: {
           // configuration for cssmin task
+          my_target: {
+            files: [{
+              expand: true,
+              cwd: 'release/css',
+              src: ['*.css', '!*.min.css'],
+              dest: 'release/css',
+              ext: '.min.css'
+            }]
+          }
      },
-     // Arbitrary non-task-specific properties
-     my_files
 
      // all of our configuration goes here
      uglify: {
