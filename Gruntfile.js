@@ -7,34 +7,68 @@ module.exports = function(grunt){
      // this way we can use things like name and version (pkg.name)
      pkg: grunt.file.readJSON('package.json'),
 
-     jshint: {
-       // configuration for jshint task
+     uglify : {
+       options: {
+         manage: false
+       },
+        my_target: {
+          files: {
+            'src/css/style.css' : ['src/sass/_global.scss', 'src/sass/_hero_nav.scss',  'src/sass/style.scss']
+          }
+        }
+     }
+
+    watch : {
+      sass : {
+        files: 'src/sass/*.scss',
+        tasks: ['sass']
+      }
+    },
+
+    sass: {
+        dev: {
+          files: {
+            'src/css/style.css' : 'src/sass/style.scss'
+          }
+        }
+    },
+     browserSync: {
+       dev: {
+         files: {
+           src : [
+             'src/css/*.css',
+             '*.html'
+           ]
+         },
+         options: {
+           watchTask: true,
+           server: './'
+         }
+       }
      },
-     cssmint: {
+
+     cssmin: {
           // configuration for cssmin task
           my_target: {
             files: [{
               expand: true,
-              cwd: 'release/css',
+              cwd: '/src/css',
               src: ['*.css', '!*.min.css'],
-              dest: 'release/css',
+              dest: 'css',
               ext: '.min.css'
             }]
           }
      },
 
-     // all of our configuration goes here
-     uglify: {
-       //uglify task configuration
-       options: {},
-       build: {}
-     }
   });
 
-  // log Something
-    // grunt.log.write('Hello world! Welcome');
-// Load the plugin that provides the "uglify" task.
+grunt.loadNpmTasks('grunt-contrib-sass');
+grunt.loadNpmTasks('grunt-browser-sync');
+grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-uglify');
+grunt.loadNpmTasks('grunt-contrib-cssmin');
+
 //Default task(s)
 grunt.registerTask('default', ['uglify']);
+grunt.registerTask('default', ['browserSync', 'watch']);
 }
