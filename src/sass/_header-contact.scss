@@ -1,0 +1,38 @@
+.header-contact{
+    background-color: #464646;
+    height: 4em;
+    position: relative;
+
+    .social-header{
+      width: 20em;
+      position: absolute;
+      left: 5%;
+      ul{
+        list-style: none;
+        li{
+          display: inline-block;
+          a{
+            text-decoration: none;
+            padding-left: 10px;
+            i{
+              color: #FFFFFF!important;
+              font-size: 18px;
+              padding-left: 10px;
+
+              &:hover{
+                color: #e3504c!important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contact-header{
+      width: 25em;
+      position: absolute;
+      right: 6%;
+      color: #ebebdf;
+      font-size: 18px;
+    }
+}

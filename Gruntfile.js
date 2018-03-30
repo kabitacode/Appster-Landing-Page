@@ -7,17 +7,18 @@ module.exports = function(grunt){
      // this way we can use things like name and version (pkg.name)
      pkg: grunt.file.readJSON('package.json'),
 
-     uglify : {
-       options: {
-         manage: false
-       },
-        my_target: {
-          files: {
-            'src/css/style.css' : ['src/sass/_global.scss', 'src/sass/_hero_nav.scss',  'src/sass/style.scss']
-          }
-        }
-     }
-
+     // uglify: {
+     //   dev: {
+     //     mangle: false,
+     //     compress: false,
+     //     beutify: true,
+     //     preserveComments: 'all',
+     //     report: 'gzip'
+     //   },
+     //   dist: {
+     //     files:
+     //   }
+     // }
     watch : {
       sass : {
         files: 'src/sass/*.scss',
@@ -52,13 +53,29 @@ module.exports = function(grunt){
           my_target: {
             files: [{
               expand: true,
-              cwd: '/src/css',
+              cwd: 'src/css',
               src: ['*.css', '!*.min.css'],
-              dest: 'css',
+              dest: 'src/css',
               ext: '.min.css'
             }]
           }
      },
+
+     bowerInstall : {
+        my_target:{
+          src:[
+            '*.html',
+            'src/sass/style.scss'
+          ],
+          cwd: '',
+          dependencies: true,
+          devDependencies: false,
+          exclude: [],
+          fileTypes: {},
+          ignorePath: '',
+          overrides: {}
+        }
+     }
 
   });
 
@@ -67,6 +84,7 @@ grunt.loadNpmTasks('grunt-browser-sync');
 grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.loadNpmTasks('grunt-bower-install');
 
 //Default task(s)
 grunt.registerTask('default', ['uglify']);
