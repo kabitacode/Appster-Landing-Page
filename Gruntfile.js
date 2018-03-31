@@ -7,18 +7,20 @@ module.exports = function(grunt){
      // this way we can use things like name and version (pkg.name)
      pkg: grunt.file.readJSON('package.json'),
 
-     // uglify: {
-     //   dev: {
-     //     mangle: false,
-     //     compress: false,
-     //     beutify: true,
-     //     preserveComments: 'all',
-     //     report: 'gzip'
-     //   },
-     //   dist: {
-     //     files:
-     //   }
-     // }
+     uglify: {
+       dev: {
+         mangle: false,
+         compress: false,
+         beutify: true,
+         preserveComments: 'all',
+         report: 'gzip'
+       },
+       dist: {
+         files: 'src/css/style.css',
+         
+       }
+     },
+
     watch : {
       sass : {
         files: 'src/sass/*.scss',
