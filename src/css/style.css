@@ -27,8 +27,22 @@ body {
   #main-header .header-contact .contact-header {
     width: 25em;
     position: absolute;
-    right: 6%;
+    right: 3%;
     color: #ebebdf;
     font-size: 18px; }
+#main-header .top-nav .navbar-nav {
+  font-family: 'Poppins',sans-serif;
+  margin-right: 6.70em; }
+  #main-header .top-nav .navbar-nav li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #595959; }
+#main-header .top-nav .navbar-brand {
+  font-size: 30px;
+  color: #595959;
+  font-family: 'PT-Serif',serif;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */
