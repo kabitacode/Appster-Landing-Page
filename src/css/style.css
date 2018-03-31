@@ -3,28 +3,28 @@ body {
   line-height: 1.7px;
   font-size: 18px; }
 
-.header-contact {
+#main-header .header-contact {
   background-color: #464646;
   height: 4em;
   position: relative; }
-  .header-contact .social-header {
+  #main-header .header-contact .social-header {
     width: 20em;
     position: absolute;
     left: 5%; }
-    .header-contact .social-header ul {
+    #main-header .header-contact .social-header ul {
       list-style: none; }
-      .header-contact .social-header ul li {
+      #main-header .header-contact .social-header ul li {
         display: inline-block; }
-        .header-contact .social-header ul li a {
+        #main-header .header-contact .social-header ul li a {
           text-decoration: none;
           padding-left: 10px; }
-          .header-contact .social-header ul li a i {
+          #main-header .header-contact .social-header ul li a i {
             color: #FFFFFF !important;
             font-size: 18px;
             padding-left: 10px; }
-            .header-contact .social-header ul li a i:hover {
+            #main-header .header-contact .social-header ul li a i:hover {
               color: #AF0404 !important; }
-  .header-contact .contact-header {
+  #main-header .header-contact .contact-header {
     width: 25em;
     position: absolute;
     right: 6%;
