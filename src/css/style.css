@@ -64,7 +64,7 @@ body {
     #main-header .bg-slider .hero {
       padding-top: 20% !important; }
       #main-header .bg-slider .hero .carousel-inner .carousel-item .col-md-6 {
-        color: '$black'; }
+        color: '$c-white'; }
         #main-header .bg-slider .hero .carousel-inner .carousel-item .col-md-6 h1 {
           font-family: '$ptserif';
           font-size: 40px; }

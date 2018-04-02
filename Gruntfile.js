@@ -23,7 +23,6 @@ module.exports = function(grunt){
 
     watch: {
        options: {
-        style: 'compressed',
         sourcemap: 'none'
       },
       sass: {
