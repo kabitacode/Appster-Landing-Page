@@ -21,10 +21,18 @@ module.exports = function(grunt){
        }
      },
 
-    watch : {
-      sass : {
+    watch: {
+       options: {
+        style: 'compressed',
+        sourcemap: 'none'
+      },
+      sass: {
         files: 'src/sass/*.scss',
-        tasks: ['sass']
+        tasks: ['sass','cssmin']
+      },
+      js: {
+        files: 'src/js/*.js',
+        tasks: ['uglify']
       }
     },
 

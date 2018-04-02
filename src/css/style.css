@@ -41,13 +41,10 @@ body {
       font-weight: 600;
       color: #595959;
       padding: 0 10px; }
-  #main-header .top-nav .navbar-brand {
-    font-size: 30px;
-    color: #595959;
-    font-family: 'PT-Serif',serif;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-left: 3.70em; }
+  #main-header .top-nav .navbar-brand img {
+    margin-left: 5.6em;
+    height: 50px;
+    width: 169px; }
   #main-header .bg-slider {
     background: url("../images/background.jpg") no-repeat;
     background-size: cover;
@@ -58,11 +55,23 @@ body {
     #main-header .bg-slider::after {
       content: "";
       background: rgba(0, 0, 0, 0.48);
-      z-index: 1;
+      z-index: -1;
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%; }
+    #main-header .bg-slider .hero {
+      padding-top: 20% !important; }
+      #main-header .bg-slider .hero .carousel-inner .carousel-item .col-md-6 {
+        color: '$black'; }
+        #main-header .bg-slider .hero .carousel-inner .carousel-item .col-md-6 h1 {
+          font-family: '$ptserif';
+          font-size: 40px; }
+        #main-header .bg-slider .hero .carousel-inner .carousel-item .col-md-6 p {
+          font-family: '$poppins';
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 25px; }
 
 /*# sourceMappingURL=style.css.map */
