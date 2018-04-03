@@ -1,5 +1,5 @@
 #main-header{
-  height: 100vh;
+  height: auto;
  
 // =============Header Contact============
 .header-contact{
@@ -68,7 +68,7 @@
     background-size: cover;
     z-index: 0;
     position: relative;
-    height: 33em;
+    height: 37em;
     overflow: hidden;
     &::after{
       content: "";
@@ -88,6 +88,7 @@
         left: -29.80em;
       }
       .carousel-control-prev-icon{position: absolute; top: 2.30em;}
+      .carousel-control-next-icon{position: absolute; top: 2.30em;}
       .carousel-inner{
         .carousel-item{
           .hero-t-desc{
@@ -107,16 +108,22 @@
             }
             a{
               font-size: 14px;
-              font-weight: 400;
+              font-weight: 500;
               font-family: "Poppins",sans-serif;
               text-decoration: none;
               padding: 10px 25px;
               text-transform: uppercase;
               border-radius: 4px;
+              cursor: pointer;
               color: #FFFFFF;
               border: 1px solid #FFFFFF;
               position: relative;
               top: 50px; 
+              transition: all .5s ease-in-out;
+              -webkit-transition: all .5s ease-in-out;
+              -moz-transition: all .5s ease-in-out;
+              -o-transition: all .5s ease-in-out;
+               
               &:hover, &:active, &:focus{
                 background: #FFFFFF;
                 color: #000000;

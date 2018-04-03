@@ -1,0 +1,22 @@
+#about_us{
+    padding: 8% 0;
+
+    .image{
+        img{
+            width: 90%;
+        }
+    }
+    .desc{
+        h1{
+           font-family: 'PT Serif',serif;
+           font-size: 55px;
+           color: #d0d1d2; 
+        }
+        p{
+            font-family: 'Poppins',sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #828284;
+        }
+    }
+}
