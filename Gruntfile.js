@@ -57,18 +57,18 @@ module.exports = function(grunt){
        }
      },
 
-     cssmin: {
-          // configuration for cssmin task
-          my_target: {
-            files: [{
-              expand: true,
-              cwd: 'src/css',
-              src: ['*.css', '!*.min.css'],
-              dest: 'src/css',
-              ext: '.min.css'
-            }]
-          }
-     },
+    //  cssmin: {
+    //       // configuration for cssmin task
+    //       my_target: {
+    //         files: [{
+    //           expand: true,
+    //           cwd: 'src/css',
+    //           src: ['*.css', '!*.min.css'],
+    //           dest: 'src/css',
+    //           ext: '.min.css'
+    //         }]
+    //       }
+    //  },
 
      bowerInstall : {
         my_target:{
@@ -94,7 +94,7 @@ grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
 grunt.loadNpmTasks('grunt-bower-install');
-
+grunt.loadNpmTasks('grunt-image');
 //Default task(s)
 grunt.registerTask('default', ['uglify']);
 grunt.registerTask('default', ['browserSync', 'watch']);
