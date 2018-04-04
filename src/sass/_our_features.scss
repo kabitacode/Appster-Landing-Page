@@ -1,0 +1,35 @@
+#our_features{
+    padding: 5% 0;
+    background-color: #fdfdfd;
+    header{
+        width: 100%;
+        h1{
+            font-size: 35px;
+            color: #d0d1d2; 
+            font-family: 'Noto Serif',serif;
+            font-weight: 700;
+            margin-bottom: 2em!important;
+            text-transform: uppercase;
+        }
+    }
+    .hero{
+        padding: 1em;
+        img{
+            width: 70px;
+            height: 55px;
+            margin-bottom: 1.50em;
+        }
+        h2{
+            font-size: 25px;
+            font-weight: 700;
+            color: #454546;
+            font-family: 'Noto Serif',serif;
+            margin-bottom: 0.75em;
+        }
+        p{
+            font-size: 16px;
+            font-family: 'Poppins',sans-serif;
+            color: #8c8c8c;
+        }
+    }
+}
