@@ -176,16 +176,17 @@ body {
 
 #use {
   padding: 3% 0; }
-  #use .col-lg-3 {
-    border: 1px solid #e55b5a; }
-    #use .col-lg-3 h1 {
-      font-size: 40px;
+  #use .hero {
+    border: 1px solid #e55b5a;
+    padding: 3em 0.70em; }
+    #use .hero h1 {
+      font-size: 4em;
       font-weight: 300;
       font-family: "Poppins",sans-serif;
       color: #e55b5a; }
-    #use .col-lg-3 p {
+    #use .hero h5 {
       font-size: 20px;
-      font-weight: 400;
+      font-weight: 600;
       font-family: "Noto Serif",serif;
       color: #000000; }
 
