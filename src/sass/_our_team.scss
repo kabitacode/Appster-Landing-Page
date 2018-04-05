@@ -1,3 +1,45 @@
 #our_team{
-    
+    padding: 5% 0;
+
+    header{
+        width: 100%;
+        padding-bottom: 3em;
+        h1{
+            font-family: "Playfair Display",serif;
+            font-size: 45px;
+            font-weight: 900;
+            color: #f0f0f0;
+            text-transform: uppercase;
+        }
+    }
+    .card{
+        border: none;
+        h5{
+            font-family: "Playfair Display",serif;
+            font-size: 21px;
+            font-weight: 700;
+            color: #444444;
+        }
+        p{
+            font-family: 'Poppins',sans-serif;
+            font-size: 15px;
+            font-weight: 300;
+            color: #bababa;
+        }
+        ul{
+            list-style: none;
+            margin-right: 3em!important;
+            li{
+                display: inline-block;
+                a{
+                    text-decoration: none;
+                    padding: 3px;
+                i{
+                    font-size: 15px;
+                    color: #737373;
+                }
+                }
+            }
+        }
+    }
 }

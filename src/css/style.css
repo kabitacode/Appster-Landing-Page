@@ -241,4 +241,51 @@ body {
       background: #f95353;
       font-size: 17px; }
 
+#our_team {
+  padding: 5% 0; }
+  #our_team header {
+    width: 100%;
+    padding-bottom: 3em; }
+    #our_team header h1 {
+      font-family: "Playfair Display",serif;
+      font-size: 45px;
+      font-weight: 900;
+      color: #f0f0f0;
+      text-transform: uppercase; }
+  #our_team .card {
+    border: none; }
+    #our_team .card h5 {
+      font-family: "Playfair Display",serif;
+      font-size: 21px;
+      font-weight: 700;
+      color: #444444; }
+    #our_team .card p {
+      font-family: 'Poppins',sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      color: #bababa; }
+    #our_team .card ul {
+      list-style: none;
+      margin-right: 3em !important; }
+      #our_team .card ul li {
+        display: inline-block; }
+        #our_team .card ul li a {
+          text-decoration: none;
+          padding: 3px; }
+          #our_team .card ul li a i {
+            font-size: 15px;
+            color: #737373; }
+
+#latest_news {
+  padding: 5% 0 3% 0;
+  background-color: #F8F8F8; }
+  #latest_news header {
+    width: 100%; }
+    #latest_news header h1 {
+      font-family: 'Playfair Display',serif;
+      font-size: 50px;
+      font-weight: 900;
+      color: #E9E9E9;
+      text-transform: uppercase; }
+
 /*# sourceMappingURL=style.css.map */
