@@ -1,0 +1,69 @@
+#our_work{
+    padding: 8% 0;
+    
+    header{
+        width: 100%;
+        h1{
+            font-family: 'Playfair Display',serif;
+            font-size: 50px;
+            font-weight: 700;
+            color: #d0d1d2; 
+        }
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                padding: 10px 6px;
+            a{
+                font-size: 17px;
+                font-weight: 400;
+                font-family: 'Poppins',sans-serif;
+                color: #000000;
+            }
+        }
+    }
+}
+
+        .col-lg-4{
+        .hero-1{
+            img{
+                width: 100%;
+                height: 20.80em;
+            }
+        }
+            .hero-2{
+              img{
+                width: 100%;
+                height: 27em;
+              }
+            }
+            .hero-3{
+               img{
+                width: 100%;
+                height: 19em;
+               }
+            }
+           .hero-4{
+               img{
+                width: 100%;
+                height: 18em;
+                margin-top: -4em;
+               }
+            }
+
+        .hero-5{
+            img{
+                width: 100%;
+                height: 12em;
+                margin-top: 2em;
+            }
+        }
+        .hero-6{
+            img{
+                width: 100%;
+                height: 20em;
+                margin-top: -6em;
+            }
+        }   
+    }
+}
