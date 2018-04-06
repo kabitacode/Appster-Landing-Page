@@ -277,15 +277,71 @@ body {
             color: #737373; }
 
 #latest_news {
-  padding: 5% 0 3% 0;
+  padding: 5% 0 4% 0;
   background-color: #F8F8F8; }
   #latest_news header {
     width: 100%; }
     #latest_news header h1 {
       font-family: 'Playfair Display',serif;
-      font-size: 50px;
+      font-size: 45px;
       font-weight: 900;
       color: #E9E9E9;
       text-transform: uppercase; }
+  #latest_news .card .card-img-top {
+    height: 17.70em; }
+  #latest_news .card h5 {
+    font-family: "Playfair Display",serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+    word-wrap: break-word; }
+  #latest_news .card p.card-text {
+    font-family: 'Poppins',sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    color: #bababa; }
+  #latest_news .card p {
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #636365; }
+  #latest_news .card a.btn {
+    font-size: 17px;
+    padding: 10px 20px;
+    text-decoration: nonee;
+    color: #edafb0;
+    border: 1px solid #edafb0; }
+
+#testimonial {
+  padding: 7% 0; }
+  #testimonial .carousel-indicators {
+    position: absolute;
+    bottom: -4em; }
+    #testimonial .carousel-indicators li {
+      background-color: #e1e1e1; }
+  #testimonial .carousel-item img {
+    width: 12%;
+    height: 5em;
+    border-radius: 50%;
+    margin-bottom: 15px; }
+  #testimonial .carousel-item h5 {
+    font-family: "Poppins",sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #e06767;
+    padding-bottom: 8px;
+    text-transform: uppercase; }
+  #testimonial .carousel-item h1 {
+    font-family: "Poppins",sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000;
+    padding-bottom: 2em;
+    text-transform: uppercase; }
+  #testimonial .carousel-item p {
+    font-family: "Playfair Display",serif;
+    font-size: 25px;
+    font-weight: 300;
+    color: #6a6a6a; }
 
 /*# sourceMappingURL=style.css.map */
