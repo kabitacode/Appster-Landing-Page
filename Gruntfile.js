@@ -23,7 +23,8 @@ module.exports = function(grunt){
 
     watch: {
        options: {
-        sourcemap: 'none'
+        sourcemap: 'none',
+        livereload: true
       },
       sass: {
         files: 'src/sass/*.scss',
