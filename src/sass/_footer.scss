@@ -1,0 +1,33 @@
+footer{
+    padding: 6% 0 0 0;
+    .col-lg-2{
+        padding-bottom: 5em!important;
+        img{
+            width: 100%;
+        }
+        ul{
+            list-style: none;
+        li{
+            display: block;
+            font-size: 12.94px;
+            font-weight: 400;
+            padding: 0 0 8px 0;
+            font-family: "Poppins",sans-serif;
+            color: #585858;
+            &:nth-child(1){
+                font-size: 18px;
+                font-weight: 500;
+                color: #424244;
+                margin-bottom: 8px!important;
+            }
+          }   
+        }
+    }
+    .col-lg-12{
+        p{
+            font-size: 15px;
+            font-weight: 400;
+            font-family: "Poppins",sans-serif;
+        }
+    }
+}

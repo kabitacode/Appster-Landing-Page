@@ -17,13 +17,26 @@
             height: 40em;
             .hero{
                 height: 100%;
+               
             header{
                     h2{
+                    text-transform: uppercase;
                     font-family: "Playfair Display",serif;
-                    font-size: 25px;
+                    font-size: 22px;
                     font-weight: 900;
-                    color:  #000000;  
-                    margin-bottom: 1.90em!important;          
+                    color:  #434345;  
+                    padding: 30px 0 40px 0;
+                    position: relative;
+                        &:after{
+                            content: "";
+                            position: absolute;
+                            top: 70px;
+                            left: 7em;
+                            width: 55px;
+                            height: 1px;
+                            background-color: #c89898;
+                            transition: all .5s ease-in-out;
+                        }
                 }
             }
             h1{
